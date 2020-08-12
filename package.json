@@ -5,6 +5,7 @@
   "author": "tedu14 <thalison.eduardo14@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^26.0.9",
     "@types/node": "^14.0.27",
     "@typescript-eslint/eslint-plugin": "3",
     "eslint": "7",
@@ -15,8 +16,13 @@
     "eslint-plugin-standard": "4",
     "git-commit-msg-linter": "^2.4.4",
     "husky": "^4.2.5",
+    "jest": "^26.3.0",
     "lint-staged": "^10.2.11",
+    "ts-jest": "^26.2.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
