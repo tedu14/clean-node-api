@@ -2,7 +2,7 @@
 a api for register questions make in nodejs, typescript, tdd, solid and clean architecture
 
 ## Funcionaliddes
-1. Cadastron
+1. Cadastro
 2. Login
 3. Criar enquete
 4. Listar enquetes
@@ -34,4 +34,20 @@ a api for register questions make in nodejs, typescript, tdd, solid and clean ar
 - Dependency Diagrams
 - Continuos integration
 - Continuos Delivery
-Continuos deployment
+- Continuos deployment
+
+## Blibliotecas e ferramentas usadas
+- yarn
+- git 
+- Express
+- jest
+- Typescript
+- Eslint
+- Prettier
+- Husky
+- Lint-staged
+- Standart Javascript style
+- git-commit-msg-linter
+- ts-node
+
+
