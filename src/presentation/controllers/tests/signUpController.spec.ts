@@ -245,7 +245,7 @@ describe('SignUp Controller', () => {
     expect(httpResponse.body).toEqual(new ServerError())
   })
 
-  test('should return a status code 204', () => {
+  test('should return a status code 200 if valid data id provided', () => {
     const { sut: signUp } = makeSut()
 
     const httpRequest = {
@@ -259,7 +259,7 @@ describe('SignUp Controller', () => {
 
     const httpResponse = signUp.handle(httpRequest)
 
-    expect(httpResponse.statusCode).toBe(204)
+    expect(httpResponse.statusCode).toBe(200)
     expect(httpResponse.body).toHaveProperty('id')
   })
 })
