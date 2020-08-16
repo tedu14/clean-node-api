@@ -244,4 +244,22 @@ describe('SignUp Controller', () => {
     expect(httpResponse.statusCode).toBe(500)
     expect(httpResponse.body).toEqual(new ServerError())
   })
+
+  test('should return a status code 204', () => {
+    const { sut: signUp } = makeSut()
+
+    const httpRequest = {
+      body: {
+        name: 'jhon doe',
+        email: 'invalid_email',
+        password: '1234',
+        passwordConfirmation: '1234'
+      }
+    }
+
+    const httpResponse = signUp.handle(httpRequest)
+
+    expect(httpResponse.statusCode).toBe(204)
+    expect(httpResponse.body).toHaveProperty('id')
+  })
 })
