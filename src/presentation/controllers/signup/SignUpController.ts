@@ -1,12 +1,12 @@
+import { MissingParamError, InvalidParamError } from '../../errors'
+import { badRequest, serverError } from '../../helpers/httpHelper'
 import {
+  IAddAccount,
   IHttpRequest,
   IHttpResponse,
-  IEmailValidator,
-  iController
-} from '../protocols'
-import { MissingParamError, InvalidParamError } from '../errors'
-import { badRequest, serverError } from '../helpers/httpHelper'
-import { IAddAccount } from '../../domain/usesCases/add-acount'
+  iController,
+  IEmailValidator
+} from './signup-protocols'
 
 export class SignUpController implements iController {
   private readonly emailValidator: IEmailValidator
