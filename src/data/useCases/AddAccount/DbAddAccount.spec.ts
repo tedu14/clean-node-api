@@ -1,5 +1,5 @@
 import { DbAddAccount } from './DbAddAccount'
-import { IEncrypter } from '../protocols/IEncrypter'
+import { IEncrypter } from './db-add-account-protocols'
 
 interface IMakeSut {
   encrypterStub: IEncrypter
